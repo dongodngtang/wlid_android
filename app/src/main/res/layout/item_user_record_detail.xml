@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="@dimen/timeline_view_width"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="@dimen/vi_time_line_width"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/my_record_timeline_line" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/vi_bird_detail_parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_record_city_height"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/record_detail_sel"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_bird_record_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:textColor="@color/app_txt_content_normal"
+            android:textSize="@dimen/app_txt_content" />
+
+
+        <TextView
+            android:id="@+id/tv_user_record_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textColor="#FFBFBFBF"
+            android:textSize="@dimen/app_txt_content" />
+
+        <ImageView
+            android:id="@+id/iv_bird_record_bird_img"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/polaroid" />
+    </LinearLayout>
+</LinearLayout>

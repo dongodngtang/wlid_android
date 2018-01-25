@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="net.doyouhike.app.wildbird.ui.main.birdinfo.news.BirdNewsActivity">
+
+    <net.doyouhike.app.wildbird.ui.view.TitleView
+        android:id="@+id/titleview_activity_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        app:left_src="@drawable/back_icon"
+        app:bg_root="@color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/app_bg" />
+
+    <include layout="@layout/layout_dividing_line" />
+
+    <include layout="@layout/layout_refresh_loadmore_view"/>
+</LinearLayout>

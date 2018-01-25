@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:axure="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <net.doyouhike.app.wildbird.ui.view.TitleView
+        android:id="@+id/titleview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        axure:left_src="@drawable/back_icon"
+        axure:m_title="注册" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/deep_gray" />
+
+    <net.doyouhike.app.wildbird.ui.view.LineEditText
+        android:id="@+id/regist_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edit_bg"
+        android:hint="请输入手机号码"
+        axure:drawableRight="@drawable/input_clear"
+        android:padding="10dp"
+        android:inputType="phone"
+        android:singleLine="true"
+        android:maxLength="11"
+        android:textColor="@color/deep_gray"
+        android:textColorHint="@color/gray"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edit_bg"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/securityCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="验证码"
+            android:singleLine="true"
+            android:padding="10dp"
+            android:inputType="phone"
+            android:textColor="@color/deep_gray"
+            android:textColorHint="@color/gray"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/getCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/code_bg_sel"
+            android:padding="10dp"
+            android:minEms="5"
+            android:gravity="center_horizontal"
+            android:text="获取验证码"
+            android:textColor="@color/light_blue"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <net.doyouhike.app.wildbird.ui.view.LineEditText
+        android:id="@+id/regist_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edit_bg"
+        android:hint="请输入密码"
+        android:padding="10dp"
+        axure:drawableRight="@drawable/yanjing_sel"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:textColor="@color/deep_gray"
+        android:textColorHint="@color/gray"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/sure_sel"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="我输入好了"
+        android:textColor="@color/white"
+        android:textSize="21sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="27dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/checkbox_sel"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="我已阅读并同意"
+            android:textColor="@color/deep_gray"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/proxy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="center"
+            android:text="《磨房网络服务使用协议》"
+            android:textColor="@drawable/cyan_word_sel"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <!--//鸟种图片-->
+
+    <include layout="@layout/layout_bird_detail_picture" />
+    <LinearLayout
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="38dp">
+        <TextView
+            android:id="@+id/tv_bird_record_detail_name_count"
+            android:textSize="@dimen/app_txt_content"
+            android:textColor="@color/app_txt_title"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_bird_record_detail_location"
+            android:drawablePadding="5dp"
+            android:textSize="@dimen/app_txt_content_sub"
+            android:textColor="@color/app_txt_content_tint"
+            android:drawableLeft="@drawable/ic_ranking_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="38dp">
+        <ImageView
+            android:id="@+id/iv_bird_record_detail_avatar"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+        <TextView
+            android:id="@+id/tv_bird_record_detail_user_name"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:textSize="@dimen/app_txt_content_sub"
+            android:textColor="@color/app_txt_content_tint"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_bird_record_detail_time"
+            android:textSize="@dimen/app_txt_content_sub"
+            android:textColor="@color/app_txt_content_tint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_bird_record_detail_content"
+        android:padding="15dp"
+        android:textColor="#DE000000"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_bird_record_detail_comment_count"
+        android:textSize="@dimen/app_txt_content"
+        android:textColor="@color/app_txt_content_tint"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

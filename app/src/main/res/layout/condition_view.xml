@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <GridView
+        android:id="@+id/baseconds"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:background="@color/white"
+        android:scrollbars="@null"
+        android:horizontalSpacing="10dp"
+        android:listSelector="@color/trans"
+        android:numColumns="2"
+        android:overScrollMode="never"
+        android:verticalSpacing="10dp" />
+
+    <LinearLayout
+        android:id="@+id/color_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="(最多可选择3种颜色)"
+            android:textColor="@color/deep_gray"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

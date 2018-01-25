@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="10dp" >
+
+    <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="4dp"
+        android:orientation="vertical">
+        <ImageView 
+            android:id="@+id/user_avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@null"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/avatar"/>
+        <TextView
+	        android:id="@+id/commentor"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:paddingTop="2dp"
+	        android:paddingBottom="10dp"
+	        android:textSize="12sp"
+	        android:textColor="@color/deep_gray" />
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/comment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/message_bubble"
+        android:textSize="13sp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:padding="15dp"/>
+    
+    <TextView 
+        android:id="@+id/favour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_gravity="center_vertical"
+        android:drawableTop="@drawable/favour_sel"
+        android:drawablePadding="2dp"
+        android:textSize="14sp"
+        android:textColor="@drawable/word_dgray2black"
+        android:text="@string/wv_retry_tip"/>
+
+</LinearLayout>

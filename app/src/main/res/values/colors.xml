@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_bg">#FFF2F2F2</color>
+    <color name="app_txt_title">#FF1A1A1A</color>
+    <color name="app_txt_content_tint">#42000000</color>
+    <color name="app_txt_content_normal">#DE000000</color>
+    <color name="app_theme">#FF34BCBB</color>
+
+    <color name="item">#FFFFFFFF</color>
+    <color name="item_pressed">#FFE1E1E1</color>
+    <color name="trans">#00000000</color>
+    <color name="trans2">#60000000</color>
+    <color name="trans3">#30000000</color>
+    <color name="halftrans">#efffffff</color>
+    <color name="grey">#F8F8F9</color>
+    <color name="gray_bg">#BFBFBF</color>
+    <color name="deep_cyan">#3A9D9A</color>
+    <color name="deep_cyan_p">#A6A6A6</color>
+    <color name="cyan">#81D0CC</color>
+    <color name="cyan_p">#2F807D</color>
+    <color name="gray">#CCCCCC</color>
+    <color name="gray_p">#B3B3B3</color>
+    <color name="green">#00CC00</color>
+    <color name="light_gray">#E9E9E9</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="deep_gray">#909090</color>
+    <color name="light_blue">#189CFC</color>
+    <color name="blue">#3366FF</color>
+    <color name="bg">#eeeeee</color>
+    <color name="tab_bg">#d9d9d9</color>
+    <color name="red">#FF3030</color>
+    <color name="text_6">#FFf3feff</color>
+    <color name="bg_me_ranking">#1A000000</color>
+    <color name="my_record_timeline_line">#5e34bcbb</color>
+    <color name="my_record_timeline_circle">#24b4b4</color>
+
+
+    //发现
+    <color name="txt_discovery_content">#DE000000</color>
+    <color name="bg_record_detail">#FFF7F8F9</color>
+    <color name="bg_draft_indicate">#FE3824</color>
+    <color name="color_divider">@color/bg</color>
+    //装备添加剂
+    <color name="setting_equipment_normal">#FFF9F9F9</color>
+    <color name="setting_equipment_selected">#34BCBB</color>
+</resources>

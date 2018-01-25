@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#f2f2f2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/lv_dialog_bottom_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:divider="@null"/>
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFE1E1E1" />
+    <TextView
+        android:id="@+id/tv_dialog_bottom_cancel"
+        android:text="取消"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#de000000"
+        android:background="@drawable/selector_user_event_options_item"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"/>
+</LinearLayout>

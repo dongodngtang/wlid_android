@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    tools:context=".ui.main.birdinfo.detail.BirdDetailActivity">
+    <!--//标题栏-->
+
+    <include
+        android:id="@+id/title_acti_bird_detail"
+        layout="@layout/layout_bird_detail_head" />
+
+    <net.doyouhike.app.library.ui.widgets.XSwipeRefreshLayout
+        android:id="@+id/refresh_activity_bird_detail"
+        android:layout_below="@id/title_acti_bird_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--//鸟种图片-->
+
+            <include layout="@layout/layout_bird_detail_picture" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/btn_act_bird_detail_sound"
+                    style="@style/BirdDetailItem"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_bird_detail_local_name"
+                        style="@style/BirdDetailText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="中文名" />
+
+                    <ImageView
+                        android:id="@+id/iv_act_bird_detail_sound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bg_bird_detail_sound_sel" />
+                </LinearLayout>
+
+                <include layout="@layout/layout_dividing_line" />
+
+
+                <TextView
+                    android:id="@+id/tv_bird_detail_eng_name"
+                    style="@style/BirdDetailText"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:text="英语名" />
+
+                <include layout="@layout/layout_dividing_line" />
+
+                <TextView
+                    android:id="@+id/tv_bird_detail_latin_name"
+                    style="@style/BirdDetailText"
+                    android:textStyle="italic"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:text="拉丁语名" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/btn_act_bird_detail_record"
+                    style="@style/BirdDetailItem"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        style="@style/BirdDetailText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="观察记录" />
+
+                    <TextView
+                        android:id="@+id/tv_bird_detail_record_quantity"
+                        style="@style/BirdDetailText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="192条"
+                        android:textColor="@color/app_txt_content_tint" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/arrow" />
+                </LinearLayout>
+
+                <include layout="@layout/layout_dividing_line" />
+
+                <LinearLayout
+                    android:id="@+id/btn_act_bird_detail_area"
+                    style="@style/BirdDetailItem"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        style="@style/BirdDetailText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="分布地域图" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/arrow" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_act_bird_detail_content"
+                style="@style/BirdDetailItem"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    style="@style/BirdDetailText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="内容介绍" />
+
+                <ImageView
+                    android:id="@+id/iv_bird_detail_content_show_indicate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bird_detail_content_indicate_sel" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vi_bird_detail_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    style="@style/BirdDetailContentTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="物种分类:" />
+
+                <TextView
+                    android:id="@+id/tv_bird_detail_content_kind"
+                    style="@style/BirdDetailContentContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="鹳形目 - 鹰科 - 鸢属" />
+
+                <TextView
+                    style="@style/BirdDetailContentTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="保护等级:" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/BirdDetailContentSubTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B2W名录" />
+
+                    <TextView
+                        android:id="@+id/tv_bird_detail_content_b2w"
+                        style="@style/BirdDetailContentContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="资料缺乏" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/BirdDetailContentSubTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CITE等级" />
+
+                    <TextView
+                        android:id="@+id/tv_bird_detail_content_cite"
+                        style="@style/BirdDetailContentContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="资料缺乏" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/BirdDetailContentSubTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RDB等级" />
+
+                    <TextView
+                        android:id="@+id/tv_bird_detail_content_rdb"
+                        style="@style/BirdDetailContentContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="资料缺乏" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/BirdDetailContentSubTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PROT名录" />
+
+                    <TextView
+                        android:id="@+id/tv_bird_detail_content_prot"
+                        style="@style/BirdDetailContentContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="资料缺乏" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/BirdDetailContentTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="特征:" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <include layout="@layout/layout_bird_detail_content_title_indicate_view" />
+
+                    <TextView
+                        style="@style/BirdDetailContentSubTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="描述" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_bird_detail_content_description"
+                    style="@style/BirdDetailContentContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <include layout="@layout/layout_bird_detail_content_title_indicate_view" />
+
+                    <TextView
+                        style="@style/BirdDetailContentSubTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="颜色" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_bird_detail_content_color"
+                    style="@style/BirdDetailContentContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <include layout="@layout/layout_bird_detail_content_title_indicate_view" />
+
+                    <TextView
+                        style="@style/BirdDetailContentSubTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="叫声" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_bird_detail_content_sound"
+                    style="@style/BirdDetailContentContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <include layout="@layout/layout_bird_detail_content_title_indicate_view" />
+
+                    <TextView
+                        style="@style/BirdDetailContentSubTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="分布范围" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_bird_detail_content_range"
+                    style="@style/BirdDetailContentContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <include layout="@layout/layout_bird_detail_content_title_indicate_view" />
+
+                    <TextView
+                        style="@style/BirdDetailContentSubTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="分布分布状况" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_bird_detail_content_distribution_sate"
+                    style="@style/BirdDetailContentContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp" />
+                <TextView
+                    android:id="@+id/tv_bird_detail_content_international_news"
+                    style="@style/BirdDetailContentTitle"
+                    android:text="@string/activity_bird_detail_content_international_news"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="30dp" />
+                <TextView
+                    style="@style/BirdDetailContentContent"
+                    android:text="·由何芬奇老师友情提供文字版权\n·本应用中鸟音部分由廖晓东老师友情提供专业处理"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="30dp" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    </net.doyouhike.app.library.ui.widgets.XSwipeRefreshLayout>
+</RelativeLayout>

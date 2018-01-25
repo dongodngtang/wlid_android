@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:axure="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:orientation="vertical" >
+    
+    <net.doyouhike.app.wildbird.ui.view.TitleView
+        android:id="@+id/titleview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        axure:left_src="@drawable/back_icon"
+        axure:right_text="发送"
+        axure:m_title="意见反馈" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/deep_gray" />
+    
+    <EditText 
+        android:id="@+id/edit_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:minLines="6"
+        android:padding="8dp"
+        android:lineSpacingExtra="2dp"
+        android:gravity="left"
+        android:hint=""
+        android:textSize="16sp"
+        android:textColor="@color/deep_gray"
+        android:textColorHint="@color/gray"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_bg"/>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.main.discovery.ranking.leaderboar.LeaderboardActivity">
+
+    <net.doyouhike.app.wildbird.ui.view.TitleView
+        android:id="@+id/titleview_leaderboard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        app:left_src="@drawable/back_icon"
+        app:bg_root="@color/white"
+        app:right_src="@drawable/ic_share_pressure"
+        app:m_title="排行榜" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/app_bg" />
+
+    <net.doyouhike.app.library.ui.widgets.XSwipeRefreshLayout
+        android:id="@+id/rv_act_leaderboard_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <net.doyouhike.app.wildbird.ui.view.scroll.RankingScrollListview
+            android:id="@+id/sl_act_leaderboard_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </net.doyouhike.app.wildbird.ui.view.scroll.RankingScrollListview>
+    </net.doyouhike.app.library.ui.widgets.XSwipeRefreshLayout>
+</LinearLayout>

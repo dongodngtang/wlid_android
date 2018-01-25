@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<ImageView
+    android:id="@+id/iv_activity_slash_branner"
+    android:clickable="true"
+    android:src="@drawable/slash"
+    android:scaleType="fitXY"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/btn_activity_slash_slip"
+        android:background="@drawable/shape_advertisement_slip"
+        android:text="跳过"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#42ffffff"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:layout_width="40dp"
+        android:layout_height="28dp" />
+</RelativeLayout>

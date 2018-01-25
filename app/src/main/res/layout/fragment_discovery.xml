@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+    <net.doyouhike.app.wildbird.ui.view.TitleView
+        android:textSize="@dimen/app_txt_title"
+        app:m_title="发现"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height" />
+
+    <LinearLayout
+        android:id="@+id/tv_discovery_nearby"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_discovery"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/set_sel"
+        android:orientation="horizontal">
+        <ImageView
+            android:src="@drawable/ic_discovery_nearby"
+            android:layout_width="18dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="18dp"
+            android:textSize="@dimen/app_txt_content"
+            android:textColor="@color/txt_discovery_content"
+            android:text="附近鸟种"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="用于预习"
+            android:textColor="#42000000"
+            android:textSize="16sp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@drawable/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tv_discovery_leaderboard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_discovery"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:gravity="center_vertical"
+        android:background="@drawable/set_sel"
+        android:orientation="horizontal">
+        <ImageView
+            android:src="@drawable/ic_discovery_leaderboard"
+            android:layout_width="18dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/app_txt_content"
+            android:layout_marginLeft="18dp"
+            android:textColor="@color/txt_discovery_content"
+            android:text="排行榜"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@drawable/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tv_discovery_area"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_discovery"
+        android:layout_marginTop="0.5dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:gravity="center_vertical"
+        android:background="@drawable/set_sel"
+        android:orientation="horizontal">
+        <ImageView
+            android:src="@drawable/ic_discovery_area"
+            android:layout_width="18dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/app_txt_content"
+            android:layout_marginLeft="18dp"
+            android:textColor="@color/txt_discovery_content"
+            android:text="区域榜"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@drawable/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

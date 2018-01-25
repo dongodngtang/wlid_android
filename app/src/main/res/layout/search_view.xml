@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:axure="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/search_top"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/grey"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp" >
+
+            <ImageView
+                android:id="@+id/auto_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@null"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:src="@drawable/ic_back"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <net.doyouhike.app.wildbird.ui.view.LineEditText
+                    android:id="@+id/bird_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/search_bg"
+                    android:drawablePadding="5dp"
+                    android:hint="鸟名"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/deep_gray"
+                    android:textSize="18sp"
+                    android:visibility="gone"
+                    axure:drawableLeft="@drawable/search_icon"
+                    axure:drawableRight="@drawable/edit_clear_sel" />
+
+                <TextView
+                    android:id="@+id/edit_bird"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/search_bg"
+                    android:drawableLeft="@drawable/search_icon"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="鸟名"
+                    android:textColor="@color/deep_gray"
+                    android:textSize="18sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp" >
+
+                <TextView
+                    android:id="@+id/lessusedword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="生僻字"
+                    android:textColor="@drawable/cyan_word_sel"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+
+                <FrameLayout
+                    android:id="@+id/choose_frame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/choose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:drawableLeft="@drawable/choose_sel3"
+                        android:layout_gravity="center"
+                        android:drawablePadding="1dp"
+                        android:gravity="center"
+                        android:text="筛选"
+                        android:textColor="@drawable/deepgray2cyan_sel"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/chosenCount"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:background="@drawable/round_blue"
+                        android:visibility="gone"
+                        android:layout_gravity="right"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/deep_gray" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <FrameLayout
+                android:id="@+id/autolayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:visibility="gone" >
+
+                <GridView
+                    android:id="@+id/autoedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:listSelector="@drawable/list_item_sel"
+                    android:numColumns="2"
+                    android:overScrollMode="never" />
+
+                <TextView
+                    android:id="@+id/autoNone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="查询无记录"
+                    android:textColor="@color/deep_gray"
+                    android:textSize="17sp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/main_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <GridView
+                    android:id="@+id/birds"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="2"
+                    android:overScrollMode="never"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="8dp"
+                    android:scrollbarStyle="outsideOverlay" >
+                </GridView>
+
+                <TextView
+                    android:id="@+id/findNone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="4dp"
+                    android:drawableTop="@drawable/tips"
+                    android:gravity="center"
+                    android:text="查询无结果。"
+                    android:textColor="@color/deep_gray"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/goTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/gotop" />
+
+</RelativeLayout>

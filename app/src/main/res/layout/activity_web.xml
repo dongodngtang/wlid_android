@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/vi_web_act_root"
+    android:orientation="vertical"
+    tools:context="net.doyouhike.app.wildbird.ui.webview.WebActivity">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/view_header" />
+
+    <ProgressBar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pb_act_web_index"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_below="@id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@null"
+        android:indeterminateOnly="false"
+        android:max="100"
+        android:progressDrawable="@drawable/progress_bar_horizontal" />
+
+    <WebView
+        android:id="@+id/wv_act_web_content"
+        android:layout_below="@id/pb_act_web_index"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        layout="@layout/vi_err_retry"/>
+</RelativeLayout>

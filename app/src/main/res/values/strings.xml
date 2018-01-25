@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">中国野鸟速查</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="login_tip_one">注：\n1.如果您在中国鸟类记录中心、中国野鸟图库所使用的邮箱也在磨房注册了，则可直接使用磨房账号和密码进行登录。</string>
+    <string name="login_tip_two">2.邮箱没有注册过磨房的中国野鸟图库用户，则需要进行账号激活，请点击这里进行激活。</string>
+    <string name="login_tip_three">3.如有疑问，可以联系我们，电话：4006009991</string>
+    <string name="login_phone_number">4006009991</string>
+    <string name="activity_bird_detail_content_international_news"><u>国际新闻</u></string>
+
+    <string name="title_record">记录</string>
+
+    <string name="tip_net_error">网络不佳</string>
+    <string name="tip_not_net">请设置好网络条件。</string>
+
+    <string name="cancel">取消</string>
+
+    <!-- 分享相关 -->
+    <string name="copy_success_can_to_share">复制成功，可粘贴分享</string>
+    <string name="action_share">分享到</string>
+    <string name="action_weixin">微信好友</string>
+    <string name="action_friend">朋友圈</string>
+    <string name="action_weibo">新浪微博</string>
+
+
+    <!-- webview相关 -->
+    <string name="webview_error_tip">数据加载失败，请下拉刷新</string>
+    <string name="webview_load_fail" formatted='false'>网页(%s)加载出错：%s,%s</string>
+    <string name="dialog_title_system_msg">系统消息</string>
+    <string name="title_activity_web">中国野鸟图库用户激活</string>
+    <string name="wv_retry_tip">重新加载</string>
+    <string name="action_qq">QQ</string>
+    <string name="tip_add_record_empty_city">地址为空,请选择城市</string>
+    <string name="txt_open_source"> \t《中国野鸟速查》由广州博冠光电科技股份有限公司、深圳市观鸟协会、磨房网、广州市自然观察协会联合开发，并由各地观鸟组织共同支持组成运维团队。它集成了“鸟语者记录中心”和“中国野鸟图库”的数据和图片资料，并已经获得何芬奇老师许可使用《中国野鸟手册》中的分种说明，同时获得廖晓东老师友情提供技术支持，对音频文件进行专业处理。\n\n\t《中国野鸟速查》将为各地观鸟组织、研究机构提供开源的数据统计与资料查询接口。各机构可以自由的将自己的鸟种观察记录数据通过API接口存储在数据库中，由《中国野鸟速查》的数据库进行统计分析；也可以通过该API获得自己研究所需要的各种数据。以此达到全国鸟种数据共享的目标，使公众科学成为现实。\n\n\t欢迎各个机构与我们技术部联系，我们可以在现有的软件框架下，提供分区域的速查、统计方案，请来信告知您机构的需求。在使用开源接口和申请独立板块方案的同时，我们也会将贵机构视为《中国野鸟速查》的运维团队成员，公示logo或名称，以感谢贵机构的支持。</string>
+    <string name="txt_open_api_document">开源接口的文档</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

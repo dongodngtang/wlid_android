@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:axure="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <net.doyouhike.app.wildbird.ui.view.LineEditText
+        android:id="@+id/reset_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edit_bg"
+        android:textColorHint="@color/gray"
+        android:hint="手机号码"
+        android:padding="10dp"
+        axure:drawableRight="@drawable/input_clear"
+        android:singleLine="true"
+        android:textColor="@color/deep_gray"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edit_bg"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/reset_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:padding="10dp"
+            android:hint="验证码"
+            android:singleLine="true"
+            android:textColor="@color/deep_gray"
+            android:textColorHint="@color/gray"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/getcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/code_bg_sel"
+            android:minEms="5"
+            android:text="获取验证码"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textColor="@color/light_blue"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <net.doyouhike.app.wildbird.ui.view.LineEditText
+        android:id="@+id/reset_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edit_bg"
+        android:textColorHint="@color/gray"
+        android:hint="请输入新密码"
+        axure:drawableRight="@drawable/yanjing_sel"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/deep_gray"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/sure_sel"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="21sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="36dp"
+        android:gravity="left"
+        android:text="提示：如果您的手机号码已停用，可使用E-mail找回密码，请拨打客服热线：4006009991"
+        android:autoLink="phone"
+        android:textColorLink="@drawable/cyan_word_sel"
+        android:textColor="@color/deep_gray"
+        android:textSize="12sp" />
+
+</LinearLayout>

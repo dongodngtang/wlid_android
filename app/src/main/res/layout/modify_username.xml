@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:axure="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <net.doyouhike.app.wildbird.ui.view.TitleView
+        android:id="@+id/titleview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        axure:left_src="@drawable/back_icon"
+        axure:m_title="设置用户名" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/deep_gray" />
+    
+    <net.doyouhike.app.wildbird.ui.view.LineEditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/edit_bg"
+        android:textColorHint="@color/gray"
+        android:hint="设置用户名"
+        axure:drawableRight="@drawable/input_clear"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/deep_gray"
+        android:textSize="20sp" />
+    
+    <TextView
+        android:id="@+id/modify_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/sure_sel"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="我就叫这个！"
+        android:textColor="@color/white"
+        android:textSize="21sp" />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:text="注：注册后用户名暂不支持更改。"
+        android:textColor="@color/deep_gray"
+        android:textSize="12sp" />
+
+</LinearLayout>

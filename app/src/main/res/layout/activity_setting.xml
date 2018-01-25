@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:axure="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true" >
+
+    <LinearLayout
+        android:id="@+id/ll_setting_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <net.doyouhike.app.wildbird.ui.view.TitleView
+            android:id="@+id/titleview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            axure:left_src="@drawable/back_icon"
+            axure:m_title="设置" />
+
+        <TextView
+            android:id="@+id/tv_setting_personal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/set_sel"
+            android:drawableRight="@drawable/arrow"
+            android:padding="15dp"
+            android:text="个人信息"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/feedback"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/set_sel"
+            android:drawableRight="@drawable/arrow"
+            android:padding="15dp"
+            android:text="意见反馈"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/bg" />
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/set_sel"
+            android:drawableRight="@drawable/arrow"
+            android:padding="15dp"
+            android:text="关于中国野鸟速查"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/bg" />
+
+        <RelativeLayout
+            android:id="@+id/updateSys"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/set_sel" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="版本更新"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:textColor="@color/gray_p"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/bg" />
+
+        <TextView
+            android:id="@+id/activity_setting_open_source"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/set_sel"
+            android:drawableRight="@drawable/arrow"
+            android:padding="15dp"
+            android:text="开源接口"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/sure_sel"
+        android:gravity="center"
+        android:padding="14dp"
+        android:text="退出"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

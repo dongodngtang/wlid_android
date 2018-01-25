@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <net.doyouhike.app.wildbird.ui.view.TitleView
+        android:id="@+id/title_add_record"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        app:m_title="编辑记录"
+        app:left_src="@drawable/back_icon"
+        app:right_text="保存" />
+
+    <ScrollView
+        android:id="@+id/sv_add_record_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_add_record_lock"
+                style="@style/ContentItem"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+
+                <RelativeLayout
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/shape_add_record_bg">
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="15dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/selector_add_record_lock" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="点击锁定当前定位与时间"
+                    android:textColor="@color/app_txt_content_tint"
+                    android:textSize="@dimen/app_txt_content_sub" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="88.6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_add_record_location"
+                        style="@style/AddRecordItem">
+
+                        <TextView
+                            style="@style/AddRecordItemTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="地点" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/tv_add_record_location"
+                            style="@style/AddRecordItemContent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_ranking_location"
+                            android:gravity="right"
+                            android:drawablePadding="3dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ll_add_record_select_city"
+                        android:visibility="gone"
+                        style="@style/AddRecordItem">
+
+                        <TextView
+                            style="@style/AddRecordItemTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="地点" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/tv_add_record_select_city"
+                            style="@style/AddRecordItemContent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="定位失败,请选择城市"
+                            android:gravity="right"
+                            android:drawablePadding="3dp"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:layout_marginLeft="@dimen/content_horizontal_margin"
+                        android:background="@color/app_bg" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_add_record_time"
+                        style="@style/AddRecordItem">
+
+                        <TextView
+                            style="@style/AddRecordItemTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="时间" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/tv_add_record_time"
+                            style="@style/AddRecordItemContent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/vi_add_record_lock"
+                    android:layout_width="match_parent"
+                    android:layout_height="88.6dp"
+                    android:background="@drawable/selector_add_record_lock_location_time" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_add_record_kind"
+                    style="@style/AddRecordItem">
+
+                    <TextView
+                        style="@style/AddRecordItemTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="鸟种" />
+
+
+                    <TextView
+                        android:id="@+id/tv_add_record_kind"
+                        style="@style/AddRecordItemContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="53dp"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/arrow" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:layout_marginLeft="@dimen/content_horizontal_margin"
+                    android:background="@color/app_bg" />
+
+                <LinearLayout style="@style/AddRecordItem"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <TextView
+                        style="@style/AddRecordItemTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="数量" />
+
+
+                    <EditText
+                        android:id="@+id/edt_add_record_count"
+                        style="@style/AddRecordItemContent"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:inputType="numberSigned"
+                        android:maxLines="1"
+                        android:selectAllOnFocus="true"
+                        android:text="1" />
+
+                    <TextView
+                        style="@style/AddRecordItemContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="只" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/content_vertical_margin"
+                android:paddingLeft="@dimen/content_horizontal_margin"
+                android:paddingRight="@dimen/content_horizontal_margin"
+                android:paddingTop="@dimen/content_vertical_margin">
+
+                <EditText
+                    android:id="@+id/edt_add_record_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:background="@null"
+                    android:gravity="top|left"
+                    android:hint="描述与备注"
+                    android:focusable="true"
+                    android:textSize="@dimen/app_txt_content_sub" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <ImageButton
+                        android:id="@+id/btn_add_record_add_picture"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ic_add_record_add_pic" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_add_record_images"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:minHeight="80dp"
+                android:layout_marginLeft="@dimen/content_horizontal_margin"
+                android:layout_marginRight="@dimen/content_horizontal_margin"
+                android:gravity="center|left"
+                android:text="批量上传历史记录:http://birdshare.zaitu.cn/admin/login"
+                android:layout_height="0dp"
+                android:autoLink="web"
+                android:clickable="true"
+                android:textColor="@color/app_txt_content_tint"
+                android:textColorLink="@color/app_txt_content_tint"
+                android:layout_weight="1" />
+            <Button
+                android:id="@+id/btn_add_record_save_add"
+                android:text="保存并新增"
+                android:layout_margin="@dimen/content_horizontal_margin"
+                android:background="@drawable/sure_sel"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

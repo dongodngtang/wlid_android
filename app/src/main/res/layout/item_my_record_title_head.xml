@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:gravity="center_vertical"
+    android:background="@android:color/white"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="@dimen/timeline_view_width"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="@dimen/vi_time_line_width"
+            android:layout_height="26dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/my_record_timeline_line" />
+
+        <View
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_my_record_timeline_indicate_title" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_item_myrecord_date"
+        android:textColor="#404040"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/iv_item_myrecord_share"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="@dimen/my_record_item_paddingleft"
+        android:src="@drawable/ic_share_pressure" />
+</LinearLayout>

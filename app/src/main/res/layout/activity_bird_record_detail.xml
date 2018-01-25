@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/activity_bird_record_detail_like_comment"
+        android:layout_alignParentBottom="true"
+        layout="@layout/layout_bird_record_detail_comment_and_like"
+        android:layout_height="50dp"
+        android:layout_width="match_parent" />
+    <include
+        android:layout_above="@id/activity_bird_record_detail_like_comment"
+        layout="@layout/layout_refresh_list"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"  />
+</RelativeLayout>

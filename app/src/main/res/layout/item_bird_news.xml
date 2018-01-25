@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:paddingTop="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/vi_bird_new_content_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/set_sel"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_bird_news_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="栖息地信息更新"
+                android:textColor="@color/app_txt_title"
+                android:textSize="@dimen/app_txt_content" />
+
+            <ImageView
+                android:id="@+id/iv_bird_news_content_show_indicate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bird_detail_content_indicate_sel" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_bird_news_avatar"
+                android:visibility="gone"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/avatar" />
+
+            <TextView
+                android:id="@+id/tv_bird_news_author"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:text="名字"
+                android:textColor="@color/app_txt_content_tint"
+                android:textSize="@dimen/app_txt_content_sub" />
+
+            <TextView
+                android:id="@+id/tv_bird_news_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2016.01.01"
+                android:textColor="@color/app_txt_content_tint"
+                android:textSize="@dimen/app_txt_content_sub" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_bird_news_content"
+        android:padding="15dp"
+        android:textSize="15sp"
+        android:visibility="gone"
+        android:background="#FFF7F8F9"
+        android:textColor="#8A000000"
+        android:text="没有挤不出的时间，只有不在乎的想念； 没有不能实现的永远，只有不会珍惜的情感。 原来，没时间是不想有时间，不珍惜是不想去珍惜！ 失去的东西，回来已经不需要了；失去的感情，回来已经不重要了。 不是所有的人，都能在原地等你；更不是所有的感情，都能失而复得。"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

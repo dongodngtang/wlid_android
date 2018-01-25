@@ -1,0 +1,145 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:windowBackground">@color/app_bg</item>
+    </style>
+    
+    <style name="GrowFromTop">
+        <item name="@android:windowEnterAnimation">@anim/shrink_from_top</item>
+        <item name="@android:windowExitAnimation">@anim/grow_from_bottom</item>
+    </style>
+    
+    <style name="GrowFromBottom">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+
+
+    <style name="bottom_dialog">
+        <item name="@android:windowEnterAnimation">@anim/bottom_dialog_enter</item>
+        <!-- 进入时的动画 -->
+        <item name="@android:windowExitAnimation">@anim/bottom_dialog_exit</item>
+        <!-- 退出时的动画 -->
+    </style>
+
+    <!-- 自定义弹出选择菜单 -->
+    <style name="MyDialogStyleBottom" parent="android:Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/bottom_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/bottom_dialog_exit</item>
+    </style>
+
+
+    <!--通用 ### start ###-->
+
+    <style name="ContentHorizontal">
+        <item name="android:paddingLeft">@dimen/content_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/content_horizontal_margin</item>
+    </style>
+
+    <style name="ContentItem" parent="ContentHorizontal">
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <!--通用 ### end ###-->
+
+
+
+    <!--编辑记录 ### start ###-->
+
+    <style name="AddRecordItem" parent="ContentItem">
+        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/set_sel</item>
+    </style>
+
+    <style name="AddRecordItemTitle">
+        <item name="android:textSize">@dimen/app_txt_content</item>
+        <item name="android:textColor">@color/app_txt_content_normal</item>
+    </style>
+    <style name="AddRecordItemContent">
+        <item name="android:textSize">@dimen/app_txt_content_sub</item>
+        <item name="android:textColor">#8A000000</item>
+    </style>
+
+    <!--编辑记录 ### end ###-->
+
+
+    <!--鸟种详情 ### start ###-->
+
+    <style name="BirdDetailText">
+        <item name="android:textSize">@dimen/app_txt_content</item>
+        <item name="android:textColor">#DE000000</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="BirdDetailContentTitle">
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#FF34BCBB</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="BirdDetailContentSubTitle">
+        <item name="android:minEms">5</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/app_txt_content_tint</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="BirdDetailContentContent">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/app_txt_content_normal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="BirdDetailItem" parent="ContentHorizontal">
+        <item name="android:clickable">true</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/set_sel</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!--鸟种详情 ### end ###-->
+
+
+    <style name="TextAppearance">
+        <item name="android:textColor">@drawable/cyan_word_sel</item>
+        <!--<item name="android:background">#00000000</item>-->
+        <!--<item name="android:textColorHighlight">@color/cyan_p</item>-->
+        <!--<item name="android:textColorHint">@color/cyan</item>-->
+        <!--<item name="android:textColorLink">@color/cyan_p</item>-->
+        <!--<item name="android:textSize">13sp</item>-->
+        <!--<item name="android:textStyle">normal</item>-->
+    </style>
+
+
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:axure="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <net.doyouhike.app.wildbird.ui.view.TitleView
+        android:id="@+id/titleview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        axure:left_src="@drawable/back_icon"
+        axure:m_title="忘记密码" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/deep_gray" />
+    <com.astuetz.PagerSlidingTabStrip
+        android:id="@+id/ts_respw_act_tabs"
+        axure:pstsIndicatorColor="@color/cyan"
+        axure:pstsShouldExpand="true"
+        axure:pstsTabTextColor="@drawable/selector_txt_res_pw_tab"
+        axure:pstsTabTextAllCaps="false"
+        axure:pstsTabTextStyle="normal"
+        axure:pstsTabTextSize="20sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/tab_bg" />
+   <android.support.v4.view.ViewPager
+       android:id="@+id/vp_respw_act_content"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+</LinearLayout>

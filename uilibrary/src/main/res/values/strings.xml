@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">UiLibrary</string>
+    <string name="common_error_msg">出错啦!</string>
+    <string name="unable_connect_network">无法连接到网络</string>
+    <string name="unable_connect_server">无法连接到服务器</string>
+    <string name="server_err">服务器异常</string>
+    <string name="network_anomaly">出错啦!</string>
+
+    <string name="try_to_click_refresh">可尝试点按刷新</string>
+    <string name="temporary_no_content">暂无内容</string>
+    <string name="refresh">刷新</string>
+    <string name="load">加载</string>
+    <string name="no_result">无结果</string>
+    <string name="action_no_result">没有找到相关活动</string>
+    <string name="common_load_more_end">没有了</string>
+</resources>

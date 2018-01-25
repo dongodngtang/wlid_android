@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitleView">
+        <attr name="left_src" format="reference" />
+        <attr name="left_txt_color" format="reference" />
+        <attr name="m_title" format="string" />
+        <attr name="title_txt_color" format="color"/>
+        <attr name="right_src" format="reference" />
+        <attr name="left_text" format="string"/>
+        <attr name="right_text" format="string"/>
+        <attr name="right_txt_color" format="color" />
+        <attr name="bg_root" format="reference"/>
+    </declare-styleable>
+    
+    <declare-styleable name="lineEdittext">
+        <attr name="drawableLeft" format="reference" />
+        <attr name="drawableRight" format="reference"/>
+    </declare-styleable>
+</resources>

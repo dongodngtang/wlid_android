@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+    
+    <TextView 
+        android:id="@+id/chosen_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:layout_margin="6dp"
+        android:textSize="15sp"
+        android:textColor="@color/deep_gray"
+        android:background="@drawable/round_whitebg"/>
+
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="right"
+        android:contentDescription="@null"
+        android:src="@drawable/delete" />
+
+</FrameLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:axure="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:axure="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <net.doyouhike.app.wildbird.ui.view.TitleView
+            android:id="@+id/titleview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            axure:m_title="编辑记录"
+            axure:right_text="保存" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/deep_gray" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <net.doyouhike.app.wildbird.ui.view.MyGridView
+                android:id="@+id/new_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="10dp" />
+
+            <TextView
+                android:id="@+id/add_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="最多可添加5张图片"
+                android:textColor="@color/deep_gray"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/deep_gray" />
+
+        <TextView
+            android:id="@+id/new_addr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/set_sel"
+            android:drawableLeft="@drawable/map"
+            android:drawablePadding="4dp"
+            android:drawableRight="@drawable/arrow"
+            android:ellipsize="end"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_acti_add_record_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/map"
+            android:drawablePadding="4dp"
+            android:drawableRight="@drawable/arrow"
+            android:hint="定位失败,请手动添加城市"
+            android:visibility="gone"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/new_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/set_sel"
+            android:drawableLeft="@drawable/clock"
+            android:drawablePadding="4dp"
+            android:drawableRight="@drawable/arrow"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/new_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_sel"
+            android:hint="请输入鸟种名称"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/deep_gray"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/new_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_bg2"
+            android:drawableRight="@drawable/count"
+            android:hint="0"
+            android:inputType="number"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/deep_gray"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/new_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_bg2"
+            android:fadeScrollbars="false"
+            android:gravity="left"
+            android:hint="记录笔记"
+            android:maxLines="8"
+            android:minLines="8"
+            android:padding="5dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="vertical"
+            android:textColor="@color/black"
+            android:textColorHint="@color/deep_gray"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>

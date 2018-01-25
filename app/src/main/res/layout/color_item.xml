@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/color_linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/color_relate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <ImageView
+            android:id="@+id/color_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@drawable/black" />
+
+        <ImageView
+            android:id="@+id/color_chosen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/color_image"
+            android:layout_alignBottom="@id/color_image"
+            android:contentDescription="@null"/>
+        
+        <TextView 
+            android:id="@+id/shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:visibility="gone"/>
+        <TextView 
+            android:id="@+id/shape2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/between_in"
+            android:drawablePadding="3dp"/>
+    </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/color_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="@color/deep_gray"/>
+
+</LinearLayout>

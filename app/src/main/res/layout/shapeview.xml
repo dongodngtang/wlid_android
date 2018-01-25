@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+    
+    <net.doyouhike.app.wildbird.ui.view.BodyView
+        android:id="@+id/body1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"/>
+    <net.doyouhike.app.wildbird.ui.view.BodyView
+        android:id="@+id/body12"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"/>
+    <net.doyouhike.app.wildbird.ui.view.BodyView
+        android:id="@+id/body2"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"/>
+    <net.doyouhike.app.wildbird.ui.view.BodyView
+        android:id="@+id/body23"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"/>
+    <net.doyouhike.app.wildbird.ui.view.BodyView
+        android:id="@+id/body3"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
